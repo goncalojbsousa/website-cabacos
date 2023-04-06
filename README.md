@@ -1,2 +1,3 @@
-# website-cabacos
-Website sobre a freguesia de Cabaços criado para um trabalho da universidade.
+# Website Cabacos
+Website sobre a freguesia de Cabaços criado para um trabalho da universidade. Feito por Gonçalo Sousa.
+Nota final: ...
