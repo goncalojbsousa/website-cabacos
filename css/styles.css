@@ -13,7 +13,7 @@
 .header{
   background-color: rgb(32, 32, 32);
   box-shadow: 1px 1px 4px rgb(32, 32, 32); 
-  height: 55px;
+  height: 70px;
   justify-content: space-between;
   padding: 0 10%;
 }
@@ -94,4 +94,23 @@
 .column img{
   width: 100%;
   height: 600px;
+}
+
+/*estilos da pagina de noticias*/
+
+.wrapper {
+  margin: 150px;
+  width: 70%;
+}
+
+.img_news {
+  max-width: 320px;
+  float: left;
+  border: 3px solid #000;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.table-responsive{
+  margin-top: 200px;
 }
