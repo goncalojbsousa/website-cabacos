@@ -119,12 +119,22 @@
   margin-top: 200px;
 }
 
+/*linha que separa as noticias*/
 hr{
   border-color:#aaa;
   box-sizing:border-box;
   width:100%;  
 }
 
+/*estilos das noticias da pagina inicial*/
+.card-title{
+  color: black;
+}
+.card-text{
+  color: black;
+}
+
+/*background*/
 body{
   background-color: rgb(53, 53, 53);
   color: white;
