@@ -90,8 +90,9 @@
   margin-right: 15px;
 }
 
-.table-responsive{
-  margin-top: 200px;
+.textnews{
+  padding: 30px;
+  text-align:left;
 }
 
 /*linha de separação*/
@@ -279,4 +280,21 @@ h4,p{
   text-align: center;
   font-size: 16px;
   margin: 10px;
+}
+
+/*estilos do footer*/
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 1px 1px 4px rgb(32, 32, 32); 
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer p {
+  color: whitesmoke;
+  margin: 20px auto;
 }
