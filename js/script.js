@@ -1,3 +1,4 @@
+/*codigo do menu da navbar */
 var header = document.getElementById("header");
 var navigationHeader = document.getElementById("navigation_header");
 var content=document.getElementById("content");
@@ -26,3 +27,21 @@ window.addEventListener('resize', function(event){
     toggleSidebar();
   }
 });
+
+/*codigo do formulario*/
+const email =document.getElementById("email").value;
+
+function sendEmail(){
+  Email.send({
+    SecureToken : "369fa9b6-f323-41e1-bda9-f35b8bada453",
+    To : 'ark1000ark@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Formulario - Website Junta de Freguesia de Cabaços",
+    Body : "Nome: " + document.getElementById("name").value
+      + "<br> E-mail: " + document.getElementById("email").value
+      + "<br> Numero de Telemovel: " + document.getElementById("phone").value
+      + "<br> Mensagem: " + document.getElementById("mensagem").value
+}).then(
+  message => alert(message)
+);
+}
