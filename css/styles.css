@@ -77,8 +77,9 @@
 /*estilos da pagina de noticias*/
 
 .wrapper {
-  margin: 150px;
-  width: 70%;
+  width: 100%;
+  padding: 40px;
+  padding-top: 0;
 }
 
 .img_news {
@@ -93,7 +94,7 @@
   margin-top: 200px;
 }
 
-/*linha que separa as noticias*/
+/*linha de separação*/
 hr{
   border-color:#aaa;
   box-sizing:border-box;
@@ -136,7 +137,7 @@ ul{
 }
 
 form{
-  background: white;
+  background: #3b3b3b;
   display: flex;
   flex-direction: column;
   padding: 2vw 4vw;
@@ -146,17 +147,17 @@ form{
 }
 
 form h3{
-  color: #555;
+  color: white;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 form input, form textarea{
   border: 0;
-  margin: 10px, 0;
+  margin-bottom: 10px;
   padding: 20px;
   outline: none;
-  background: #f5f5f5;
+  background: #e0e0e0;
   font-size: 16px;
 }
 
@@ -213,7 +214,7 @@ form button{
 .imgcontent {
   max-width: 100%;
   float: left;
-  border: 4px solid #000000;
+  border: 4px solid rgb(47, 47, 47);
   border-radius: 10px;
   margin-right: 15px;
 }
@@ -221,7 +222,7 @@ form button{
 .imgfoto {
   max-width: 100%;
   float: left;
-  border: 4px solid #000000;
+  border: 4px solid rgb(47, 47, 47);
   border-radius: 200px;
   margin-right: 15px;
 }
@@ -240,4 +241,42 @@ form button{
     max-width: 710px;
     display: block;
   }
+}
+
+/*estilos da localização*/
+.googlemaps{
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.googlemaps iframe {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  padding-top: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+/*estilos da pagina executivos*/
+.executivo{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.members{
+  display: flex;
+}
+.team-mem{
+  margin: 8px;
+}
+
+h4,p{
+  text-align: center;
+  font-size: 16px;
+  margin: 10px;
 }
