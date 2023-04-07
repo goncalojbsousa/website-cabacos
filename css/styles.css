@@ -21,6 +21,7 @@
 .navigation_header{
   gap: 35px;
   z-index: 2;
+  margin: 0;
 }
 
 .navigation_header a{

@@ -11,193 +11,193 @@
 		<title>Cabaços</title>
 </head>
 <body>
-		<header>
-			<!--Header-->
-			<div class="header" id="header">
+	<header>
+		<!--Header-->
+		<div class="header" id="header">
+			<button onclick="toggleSidebar()" class="btn_iconHeader">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+				</svg>
+			</button>
+			<div class="logo_header">
+				<a href="index.html"><img src="img/logo.png" class="img_logo" alt="Brasão da freguesia de cabaços"></a>
+			</div>
+			<ul class="navigation_header" id="navigation_header">
 				<button onclick="toggleSidebar()" class="btn_iconHeader">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+						<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
 					</svg>
 				</button>
-				<div class="logo_header">
-					<a href="index.html"><img src="img/logo.png" class="img_logo" alt="Brasão da freguesia de cabaços"></a>
-				</div>
-				<div class="navigation_header" id="navigation_header">
-					<button onclick="toggleSidebar()" class="btn_iconHeader">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-							<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-						</svg>
+				<a href="index.html"><button type="button" class="btn btn-outline-light">Início</button></a>
+				<!--botão com varias opcões-->
+				<li class="nav-item dropdown">
+					<button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						Freguesia
 					</button>
-					<a href="index.html"></a><button type="button" class="btn btn-outline-light">Início</a></button>
-					<!--botão com varias opcões-->
+					<ul class="dropdown-menu dropdown-menu-dark">
+						<li><a class="dropdown-item" href="historia.html">História</a></li>
+						<li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+						<li><a class="dropdown-item" href="ondecomer.html">Onde Comer</a></li>
+						<li><a class="dropdown-item" href="paroquia.html">Paróquia</a></li>
+					</ul>
+					</li>
 					<li class="nav-item dropdown">
-						<button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-						  Freguesia
-						</button>
-						<ul class="dropdown-menu dropdown-menu-dark">
-						  <li><a class="dropdown-item" href="historia.html">História</a></li>
-						  <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
-						  <li><a class="dropdown-item" href="ondecomer.html">Onde Comer</a></li>
-						  <li><a class="dropdown-item" href="paroquia.html">Paróquia</a></li>
-						</ul>
-					  </li>
-					  <li class="nav-item dropdown">
-						<button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-						  Cabaços FC
-						</button>
-						<ul class="dropdown-menu dropdown-menu-dark liststy">
-						  <li><a class="dropdown-item" href="#">Tabela</a></li>
-						  <li><a class="dropdown-item" href="#">Resultados</a></li>
-						  <li><a class="dropdown-item" href="#">Sobre</a></li>
-						</ul>
-					  </li>
-					  <button type="button" class="btn btn-outline-light">Pedidos</button>
-				</div>
-			</div>
-		</header>
+					<button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						Cabaços FC
+					</button>
+					<ul class="dropdown-menu dropdown-menu-dark liststy">
+						<li><a class="dropdown-item" href="#">Tabela</a></li>
+						<li><a class="dropdown-item" href="#">Resultados</a></li>
+						<li><a class="dropdown-item" href="#">Sobre</a></li>
+					</ul>
+					</li>
+					<button type="button" class="btn btn-outline-light">Pedidos</button>
+			</ul>
+		</div>
+	</header>
 		
-		<content tabindex="0" onclick="closeSidebar()" id="content">
+	<content tabindex="0" onclick="closeSidebar()" id="content">
 
-			<!--Slide de imagens        -->
-			<div id="carouselExampleCaptions" class="carousel slide">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active c-item">
-						<img src="img/cabacos_imagemTeste1.jpg" class="d-block w-100 c-img" alt="Fotografia aerea de Cabaços">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Bem-Vindo a Cabaços!</h5>
-							<p>Encontre aqui todas as informações que necessita sobre a nossa freguesia</p>
-						</div>
-					</div>
-					<div class="carousel-item c-item">
-						<img src="img/igrejacabacos.jpg" class="d-block w-100 c-img" alt="Igreja de Cabaços">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Bem-Vindo a Cabaços!</h5>
-							<p>Encontre aqui todas as informações que necessita sobre a nossa freguesia.</p>
-						</div>
-					</div>
-					<div class="carousel-item c-item">
-						<img src="img/cabacos_junta.jpg" class="d-block w-100 c-img" alt="Junta de freguesia de cabaços">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Bem-Vindo a Cabaços!</h5>
-							<p>Encontre aqui todas as informações que necessita sobre a nossa freguesia.</p>
-						</div>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+		<!--Slide de imagens        -->
+		<div id="carouselExampleCaptions" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-			<br>
-			<!--noticias // eventos
-			as noticias tao dentro de um grid para organizar por colunas
-			-->
-			<div class="container text-center">
-				<div class="row">
-					<div class="col">
-						<div class="card" style="width: 18rem;">
-							<img src="img/news/irs22.jpg" class="card-img-top" alt="imagem sobre a noticia">
-							<div class="card-body">
-								<h5 class="card-title">Tudo sobre a entrega do IRS 2022</h5>
-								<p class="card-text">Informações sobre a entrega do IRS.</p>
-								<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
-							</div>
-						</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active c-item">
+					<img src="img/cabacos_imagemTeste1.jpg" class="d-block w-100 c-img" alt="Fotografia aerea de Cabaços">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Bem-Vindo a Cabaços!</h5>
+						<p>Encontre aqui todas as informações que necessita sobre a nossa freguesia</p>
 					</div>
-					<div class="col">
-						<div class="card" style="width: 18rem;">
-							<img src="img/news/etap_small.png" class="card-img-top" alt="imagem sobre a noticia">
-							<div class="card-body">
-								<h5 class="card-title">Centro Qualifica da COOPETAPE/ETAP</h5>
-								<p class="card-text">Processo formativo da COOPETAPE/ETAP.</p>
-								<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
-							</div>
-						</div>
+				</div>
+				<div class="carousel-item c-item">
+					<img src="img/igrejacabacos.jpg" class="d-block w-100 c-img" alt="Igreja de Cabaços">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Bem-Vindo a Cabaços!</h5>
+						<p>Encontre aqui todas as informações que necessita sobre a nossa freguesia.</p>
 					</div>
-					<div class="col">
-						<div class="card" style="width: 18rem;">
-							<img src="img/news/fpf_small.png" class="card-img-top" alt="imagem sobre a noticia">
-							<div class="card-body">
-								<h5 class="card-title">Formação profissional financiada</h5>
-								<p class="card-text">Formações modulares certificadas realizadas no edifício da Junta.</p>
-								<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
-							</div>
-						</div>
+				</div>
+				<div class="carousel-item c-item">
+					<img src="img/cabacos_junta.jpg" class="d-block w-100 c-img" alt="Junta de freguesia de cabaços">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Bem-Vindo a Cabaços!</h5>
+						<p>Encontre aqui todas as informações que necessita sobre a nossa freguesia.</p>
 					</div>
-					<div class="col">
-						<div class="card" style="width: 18rem;">
-							<img src="img/news/aulas_small.png" class="card-img-top" alt="imagem sobre a noticia">
-							<div class="card-body">
-								<h5 class="card-title">Aulas de ginástica para a população sénior</h5>
-								<p class="card-text">Aulas de atividade física gratuitas para a população sénior.</p>
-								<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
-							</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<br>
+		<!--noticias // eventos
+		as noticias tao dentro de um grid para organizar por colunas
+		-->
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="img/news/irs22.jpg" class="card-img-top" alt="imagem sobre a noticia">
+						<div class="card-body">
+							<h5 class="card-title">Tudo sobre a entrega do IRS 2022</h5>
+							<p class="card-text">Informações sobre a entrega do IRS.</p>
+							<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col">
-						<div class="table-responsive">
-							<h1>População da freguesia de Cabaços ao longo dos anos</h1>
-							<table class="table">
-								<thead >
-									<tr>
-									<th scope="col">1864</th>
-									<th scope="col">1878</th>
-									<th scope="col">1890</th>
-									<th scope="col">1900</th>
-									<th scope="col">1911</th>
-									<th scope="col">1920</th>
-									<th scope="col">1930</th>
-									<th scope="col">1940</th>
-									<th scope="col">1950</th>
-									<th scope="col">1960</th>
-									<th scope="col">1970</th>
-									<th scope="col">1981</th>
-									<th scope="col">1991</th>
-									<th scope="col">2001</th>
-									<th scope="col">2011</th>
-									</tr>
-								</thead>
-								<tbody class="table-group-divider">
-									<tr>
-									<td>651</td>
-									<td>668</td>
-									<td>642</td>
-									<td>670</td>
-									<td>732</td>
-									<td>740</td>
-									<td>718</td>
-									<td>836</td>
-									<td>965</td>
-									<td>890</td>
-									<td>834</td>
-									<td>868</td>
-									<td>800</td>
-									<td>703</td>
-									<td>671</td>
-									</tr>
-								</tbody>
-							</table>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="img/news/etap_small.png" class="card-img-top" alt="imagem sobre a noticia">
+						<div class="card-body">
+							<h5 class="card-title">Centro Qualifica da COOPETAPE/ETAP</h5>
+							<p class="card-text">Processo formativo da COOPETAPE/ETAP.</p>
+							<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="img/news/fpf_small.png" class="card-img-top" alt="imagem sobre a noticia">
+						<div class="card-body">
+							<h5 class="card-title">Formação profissional financiada</h5>
+							<p class="card-text">Formações modulares certificadas realizadas no edifício da Junta.</p>
+							<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="img/news/aulas_small.png" class="card-img-top" alt="imagem sobre a noticia">
+						<div class="card-body">
+							<h5 class="card-title">Aulas de ginástica para a população sénior</h5>
+							<p class="card-text">Aulas de atividade física gratuitas para a população sénior.</p>
+							<a href="noticias.html" class="btn btn-primary">Veja mais!</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<br>
-			<!--tabela da populaçao ao longo dos anos-->
-			
-		</content>
+			<div class="row">
+				<div class="col">
+					<div class="table-responsive">
+						<h1>População da freguesia de Cabaços ao longo dos anos</h1>
+						<table class="table">
+							<thead >
+								<tr>
+								<th scope="col">1864</th>
+								<th scope="col">1878</th>
+								<th scope="col">1890</th>
+								<th scope="col">1900</th>
+								<th scope="col">1911</th>
+								<th scope="col">1920</th>
+								<th scope="col">1930</th>
+								<th scope="col">1940</th>
+								<th scope="col">1950</th>
+								<th scope="col">1960</th>
+								<th scope="col">1970</th>
+								<th scope="col">1981</th>
+								<th scope="col">1991</th>
+								<th scope="col">2001</th>
+								<th scope="col">2011</th>
+								</tr>
+							</thead>
+							<tbody class="table-group-divider">
+								<tr>
+								<td>651</td>
+								<td>668</td>
+								<td>642</td>
+								<td>670</td>
+								<td>732</td>
+								<td>740</td>
+								<td>718</td>
+								<td>836</td>
+								<td>965</td>
+								<td>890</td>
+								<td>834</td>
+								<td>868</td>
+								<td>800</td>
+								<td>703</td>
+								<td>671</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!--tabela da populaçao ao longo dos anos-->
+		
+	</content>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-		<script src="js/script.js"></script>
-	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
 </html>
