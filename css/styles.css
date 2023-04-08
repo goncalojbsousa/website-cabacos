@@ -40,29 +40,6 @@
   display: none;
 }
 
-/*menu responsivo*/
-@media screen and (max-width: 768px){
-  .btn_iconHeader{
-    display: block;
-  }
-  .navigation_header{
-    position: absolute;
-    flex-direction: column;
-    top: 0;
-    background-color: rgb(51, 51, 51);
-    height: 100%;
-    width: 35vw;
-    padding: 16px; 
-    animation-duration: 1s;
-    margin-left: -100vw;
-  }
-}
-@keyframes showSidebar {
-  from {margin-left: -100vw;}
-  top {margin-left: -10vw;}
-}
-
-
 /*Estilos do slide de imagens*/
 .c-item {
   height: 480px;
@@ -95,19 +72,6 @@
   padding-bottom: 0;
   text-align:left;
 }
-
-@media screen and (max-width: 768px){
-  .img_news {
-    max-width: 100%;
-    float: center;
-  }
-  .textnews{
-    padding: 5px;
-    
-  }
-}
-
-
 
 /*linha de separação*/
 hr{
@@ -196,7 +160,6 @@ form button{
   margin-top: 30px;
 }
 
-
 .texto-conteudo{
   background: #3b3b3b;
   padding: 30px;
@@ -243,13 +206,6 @@ form button{
   border: 3px solid rgb(65, 65, 65);
 }
 
-@media (max-width: 768px){
-  .wrap{
-    max-width: 710px;
-    display: block;
-  }
-}
-
 /*estilos da localização*/
 .googlemaps{
   padding-bottom: 50%;
@@ -284,15 +240,6 @@ form button{
   border-radius: 10px;
 }
 
-@media (max-width: 768px){
-  .executivo{
-    width: 100;
-    max-width: 710px;
-    display: block;
-    grid-template-columns: 1fr;
-  }
-}
-
 /*estilos do footer*/
 .footer {
   width: 100%;
@@ -308,4 +255,53 @@ form button{
 .footer p {
   color: whitesmoke;
   margin: 20px auto;
+}
+
+/*ponto de quebra*/
+
+@media (max-width: 768px){
+  /*menu responsivo*/
+  .btn_iconHeader{
+    display: block;
+  }
+  .navigation_header{
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: rgb(51, 51, 51);
+    height: 100%;
+    width: 35vw;
+    padding: 16px; 
+    animation-duration: 1s;
+    margin-left: -100vw;
+  }
+
+  /*estilos da pagina de noticias*/
+  .img_news {
+    max-width: 100%;
+    float: center;
+  }
+  .textnews{
+    padding: 5px;
+  }
+
+  /*estilo dos conteudos*/
+  .wrap{
+    max-width: 710px;
+    display: block;
+  }
+  
+  /*estilo da pagina executivos*/
+  .executivo{
+    width: 100;
+    max-width: 710px;
+    display: block;
+    grid-template-columns: 1fr;
+  }
+}
+
+/*menu responsivo*/
+@keyframes showSidebar {
+  from {margin-left: -100vw;}
+  top {margin-left: -10vw;}
 }

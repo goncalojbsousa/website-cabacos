@@ -28,9 +28,7 @@ window.addEventListener('resize', function(event){
   }
 });
 
-/*codigo do formulario*/
-const email =document.getElementById("email").value;
-
+/*codigo do formulario (so funciona se mandar a partir do email ark1000ark@gmail.com)*/
 function sendEmail(){
   Email.send({
     SecureToken : "369fa9b6-f323-41e1-bda9-f35b8bada453",
