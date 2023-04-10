@@ -231,6 +231,7 @@ form button{
   gap: 40px;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 .imgexecutivo {
